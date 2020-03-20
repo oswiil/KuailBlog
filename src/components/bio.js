@@ -8,13 +8,13 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import Image from "gatsby-image"
-
+import Random from "../components/registrylink"
 import { rhythm } from "../utils/typography"
 
 const Bio = () => {
   const data = useStaticQuery(graphql`
     query BioQuery {
-      avatar: file(absolutePath: { regex: "/profile-pic.jpg/" }) {
+      avatar: file(absolutePath: { regex: "/pp.jpg/" }) {
         childImageSharp {
           fixed(width: 50, height: 50) {
             ...GatsbyImageSharpFixed
@@ -36,6 +36,7 @@ const Bio = () => {
   `)
 
   const { author, social } = data.site.siteMetadata
+
   return (
     <div
       style={{
@@ -56,12 +57,11 @@ const Bio = () => {
           borderRadius: `50%`,
         }}
       />
+
       <p>
-        Written by <strong>{author.name}</strong> {author.summary}
-        {` `}
-        <a href={`https://twitter.com/${social.twitter}`}>
-          You should follow him on Twitter
-        </a>
+        {" "}
+        Si ya habéis leido el artículo podéis encontrar el link de registro
+        <Random />
       </p>
     </div>
   )

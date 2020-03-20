@@ -6,7 +6,8 @@ import { rhythm, scale } from "../utils/typography"
 const Layout = ({ location, title, children }) => {
   const rootPath = `${__PATH_PREFIX__}/`
   let header
-
+  let html
+  let body
   if (location.pathname === rootPath) {
     header = (
       <h1
@@ -49,23 +50,47 @@ const Layout = ({ location, title, children }) => {
       </h3>
     )
   }
+
   return (
-    <div
+    <html
       style={{
-        marginLeft: `auto`,
-        marginRight: `auto`,
-        maxWidth: rhythm(24),
-        padding: `${rhythm(1.5)} ${rhythm(3 / 4)}`,
+        backgroundImage: `url(Background.png)`,
+        backgroundSize: `cover`,
+        overflow: `hidden`,
       }}
     >
-      <header>{header}</header>
-      <main>{children}</main>
-      <footer>
-        © {new Date().getFullYear()}, Built with
-        {` `}
-        <a href="https://www.gatsbyjs.org">Gatsby</a>
-      </footer>
-    </div>
+      <div
+        style={{
+          backgroundImage: `url(Background.png)`,
+          color: `white`,
+          marginLeft: `auto`,
+          marginRight: `auto`,
+          maxWidth: rhythm(24),
+          padding: `${rhythm(1.5)} ${rhythm(3 / 4)}`,
+        }}
+      >
+        <header>{header}</header>
+        <main>{children}</main>
+        <footer>
+          © {new Date().getFullYear()}, Built By Farpotshket using
+          {` `}
+          <a href="https://www.gatsbyjs.org">Gatsby</a>
+          <div>
+            <a href="https://www.Facebook.com">
+              <img src="Face.png" alt="facebook"></img>
+            </a>
+            <a href="">
+              {" "}
+              <img src="twitter.png" alt="twitter" />
+            </a>
+            <a href="">
+              {" "}
+              <img src="mail.png" alt="mail" />
+            </a>
+          </div>
+        </footer>
+      </div>
+    </html>
   )
 }
 

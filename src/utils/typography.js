@@ -4,7 +4,7 @@ import Wordpress2016 from "typography-theme-wordpress-2016"
 Wordpress2016.overrideThemeStyles = () => {
   return {
     "a.gatsby-resp-image-link": {
-      boxShadow: `none`,
+      boxShadow: `1px 1px 2em black`,
     },
   }
 }
