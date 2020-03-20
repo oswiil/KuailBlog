@@ -28,7 +28,7 @@ const BlogIndex = ({ data, location }) => {
               key={node.fields.slug}
               style={{
                 backgroundColor: `rgb(255,255,255,0.0185)`,
-                height: `150px`,
+                height: `relative`,
                 borderRadius: `20px`,
                 padding: `relative`,
               }}

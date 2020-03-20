@@ -19,7 +19,7 @@ function Random() {
         <button
           onClick={() => Randomise()}
           style={{
-            backgroundColor: `#00CC00`,
+            backgroundColor: `transparent`,
             color: `white`,
             borderRadius: `29px`,
             width: `100px`,
