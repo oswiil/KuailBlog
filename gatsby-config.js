@@ -5,7 +5,7 @@ module.exports = {
       name: `Farpotshket`,
       summary: `Empowering people with sofware`,
     },
-    description: `A starter blog demonstrating what Gatsby can do.`,
+    description: `Registrarse en kuailian y ganar activos pasivos.`,
     siteUrl: `https://gatsby-starter-blog-demo.netlify.com/`,
     social: {
       twitter: `Farpotshket`,

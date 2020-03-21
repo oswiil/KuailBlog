@@ -15,19 +15,17 @@ function Random() {
   }
   return (
     <div className="registryButton">
-      <a>
-        <button
-          onClick={() => Randomise()}
-          style={{
-            backgroundColor: `transparent`,
-            color: `white`,
-            borderRadius: `29px`,
-            width: `100px`,
-          }}
-        >
-          AQUI
-        </button>
-      </a>
+      <button
+        onClick={() => Randomise()}
+        style={{
+          backgroundColor: `transparent`,
+          color: `white`,
+          borderRadius: `29px`,
+          width: `100px`,
+        }}
+      >
+        AQUI
+      </button>
     </div>
   )
 }
